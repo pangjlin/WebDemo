@@ -28,9 +28,10 @@ public class webservlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
         IOException {
-        String data = this.getData();
-        response.setContentType("text/html;charset=UTF-8");
-        response.getOutputStream().write(data.getBytes("UTF-8"));
+        //        String data = this.getData();
+        //        response.setContentType("text/html;charset=UTF-8");
+        //        response.getOutputStream().write(data.getBytes("UTF-8"));
+        this.doGet(request, response);
     }
 
 }
